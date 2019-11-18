@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" href="RPS.css">
+	<link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+</head>
+<body>
+	<header>
+		<h1 id = "title" class = "text-center">ROCK PAPER SCISSORS GAME</h1>
+	</header>
+	<div id = "main">
+		<div id = "scores" class = "text-center">
+			<div id = "playerTitle" class = "scoreTitle float-left text-center">Player Score
+				<div id = "playerScore" class = "score">0</div>
+			</div>
+			<div id = "computerTitle" class = "scoreTitle float-right text-center">Computer Score
+				<div id = "computerScore" class = "score">0</div>
+			</div>
+		</div>
+		<div id = "winText" class = "text-center">LET'S PLAY</div>
+	</div>
+	<div id = "images">
+		<div id = "rock" class = "hand"><img src="img/rock.png" onclick = "check('rock')"></div>
+		<div id = "paper" class = "hand"><img src="img/paper.png" onclick = "check('paper')"></div>
+		<div id = "scissors" class = "hand"><img src="img/scissors.png" onclick = "check('scissors')"></div>
+	</div>
+	<script src="RPS.js"></script>
+</body>
+</html>
