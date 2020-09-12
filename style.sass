@@ -6,38 +6,49 @@
 body
     background-color: rgb(114, 37, 53)
     color: rgb(141, 218, 202)
-    font-family: sans-serif
+    font-family: 'Signika', sans-serif
     cursor: default
-
-img
-    width: 200px
-    height: 200px
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
 
 h1
     font-size: 60px
     background-color: rgb(141, 218, 202)
     color: rgb(114, 37, 53)
     padding: 1em
+    text-align: center
 
-.float-left
-    float: left
-
-.float-right
-    float: right
+img
+    width: 200px
+    height: 200px
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
 
 #scores
-    margin-left: 30%
-    margin-right: 30%
+    display: flex
+    width: 100%
+    justify-content: center
     margin-top: 40px
-
-.text-center
-    text-align: center
 
 .score
     border: 4px solid rgb(141, 218, 202)
     font-size: 64px
     margin: 10px 0 20px 0
+    text-align: center
+
+.scoreTitle
+    width: 400px
+    height: 200px
+    margin: 30px
+
+    .scoreContainer
+        display: flex
+        height: 80px
+        align-items: center
+        h1
+            font-size: 32px
+            background-color: transparent
+            color: rgb(141, 218, 202)
+            text-align: center
+            margin: auto
+            padding: 0
 
 #winTextContainer
     min-height: 120px
@@ -59,22 +70,6 @@ h1
     margin: 20px 40px 20px 40px
     transition: all 0.3s linear
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0)
-
-.scoreTitle
-    width: 45%
-    height: 200px
-
-    .scoreContainer
-        display: flex
-        height: 80px
-        align-items: center
-        h1
-            font-size: 32px
-            background-color: transparent
-            color: rgb(141, 218, 202)
-            text-align: center
-            margin: auto
-            padding: 0
 
 #images
     text-align: center
